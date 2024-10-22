@@ -1,7 +1,10 @@
+
+#Printing the string
+
 print("hello world")
 vec<-c(TRUE)
-class(vec)
-options()
+class(vec) #check the type of vec
+options() #variable in the environment
 digits=23.56666
 options(digits=8)
 
@@ -208,3 +211,38 @@ assign_grade("Sumit tak",85)
 assign_grade("Shreya Joshi",75)
 assign_grade("Vishal sharma",65)
 assign_grade("Sumit Prakash",15)
+
+
+--------------------------------------
+#checking even odd in a vector
+a3<-c(4,5,6,7)
+ifelse(a3%%2==0,"Even","Odd")
+--------------------------------------
+  #using the switch in R
+  
+switch(2,"red","blue","green")
+
+#key value pair in the switch
+switch("color",color="red",shape="square",fill="Not filled")
+#IF the value is not matched with the list then it will return null invisible.
+-----------------------------------------------
+# MId Term-2 Practice
+  
+matg<-matrix(c(1:15),nrow=5,ncol=3,byrow=FALSE)
+matg[4,2]
+
+arrah<-array(c(1:20),dim=c(3,3,3),dimnames=list(c("row1","row2","row3"),c("col1","col2","col3"),list("layer1","layer 2","layer 3")))
+arrah[2,2,]
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
