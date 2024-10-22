@@ -225,6 +225,23 @@ switch(2,"red","blue","green")
 #key value pair in the switch
 switch("color",color="red",shape="square",fill="Not filled")
 #IF the value is not matched with the list then it will return null invisible.
+
+----------------------------------------------
+#for loop in R
+  for (word in c("I", "am", "Learning", "R")) {
+    cat("The text in the loop is:", word, "\n")
+  }
+---------------------------------------------
+#for loop in the data frame
+  df3 <- data.frame(
+    x = c(1, 2, 3),
+    y = c("A", "B", "C")
+  )
+
+for (col in df3) {
+  str(col)
+}
+
 -----------------------------------------------
 # MId Term-2 Practice
   
@@ -233,16 +250,3 @@ matg[4,2]
 
 arrah<-array(c(1:20),dim=c(3,3,3),dimnames=list(c("row1","row2","row3"),c("col1","col2","col3"),list("layer1","layer 2","layer 3")))
 arrah[2,2,]
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
