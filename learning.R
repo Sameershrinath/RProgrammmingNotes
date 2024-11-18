@@ -249,4 +249,122 @@ matg<-matrix(c(1:15),nrow=5,ncol=3,byrow=FALSE)
 matg[4,2]
 
 arrah<-array(c(1:20),dim=c(3,3,3),dimnames=list(c("row1","row2","row3"),c("col1","col2","col3"),list("layer1","layer 2","layer 3")))
-arrah[2,2,]
+arrah[,,2]
+
+
+
+arrayi<- array(c(5:50),dim=c(2,2,2),dimnames=list(c("row1","row2"),c("col1","col2"),c("lay1","lay2")))
+arrayi
+ 
+diag(5,nrow=5)
+diag(4,nrow=4)
+
+A<-matrix(c(1:12),nrow=4,ncol=3,dimnames=list(c("r1",'r2','r3','r4'),c('c1','c2','c3')),byrow=TRUE)
+A
+
+B<-matrix(c(1:6),nrow=3,ncol=2)
+
+matrixi<-matrix(c(1:12), nrow=4,ncol=3, byrow=TRUE)
+matrixi
+
+
+sam$sumi<-2
+sam
+
+
+
+
+c<-array(c(1:5),dim=c(2,3,2),dimnames=list(c('r1','r2'),c('c1','c2','c3'),c('l1','l2')))
+c
+
+
+mat<-matrix(c(1:12),ncol=3,nrow=4,dimnames=list(c('r1','r2','r3','r4'),c('c1','c2','c3')),byrow=TRUE)
+mat
+
+e<-list(10,20,30,40)
+f<-list(50,60,70,80)
+d<-list(e,5,6,f)
+
+
+e
+names(e)<-c("a","b","c","d")
+
+
+student<-data.frame(
+  roll<-c(1,2,3,4),
+  name<-c("same","sumit","tak","shre"),
+  class<-c(5,6,7,8)
+)
+
+student
+
+SS<-as.data.frame(A)
+is.data.frame(SS)
+
+rownames(student)<-c("student 1","student 2","studnet 3","student 4")
+student
+
+colnames(student)<- c("roll","names","class")
+student
+
+
+student$roll
+student$names[3]
+
+
+
+#creating function
+
+add<-function(x,y){
+   x+y
+}
+add(4,5)
+
+add(c(2,3,4),1)
+
+
+calc<-function(x,y,type){
+  if (length(type)>1){stop("Type given is not valid")}
+  if (type=="add")
+    {
+    x+y
+  }
+  else if (type=="minus")
+  {
+    x-y
+  }
+  else
+    {
+    print("given type is not valid")
+  }
+}
+
+calc(4,5,"add")
+calc(5,6,"minus")
+calc(4,5,"fuck")
+
+
+
+
+
+-----------------------------------------------
+#class note 12/11/2024
+c(TRUE,FALSE) & c(TRUE,TRUE) #And gate (&& for single value)
+c(TRUE,FALSE) | c(TRUE,TRUE) #Or gate (|| for single value )
+#  ! is the not operator 
+
+#absolute function 
+
+x<-c(-5,-4,6,3)
+abs(x)
+# output [1] 5 4 6 3
+
+x[abs(x)>=4.5] 
+#Output [1] -5  6
+
+#any function any() gives true if any is TRUE
+#all function all() gives true if all is TRUE
+
+
+
+
